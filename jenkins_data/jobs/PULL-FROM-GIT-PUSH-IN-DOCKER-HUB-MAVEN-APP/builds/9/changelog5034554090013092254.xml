@@ -1,0 +1,9 @@
+commit 8472809cb5258942e270b3ac2e21a12ede539a73
+tree 1a044c1502a5ecb6d6b78ee117754209b7c07fb1
+parent b7b4ca1527bdabf7793e9a34bfdf1e87e571aec0
+author sandipchatterjee540 <58181993+sandipchatterjee540@users.noreply.github.com> 2020-07-07 14:36:00 +0530
+committer GitHub <noreply@github.com> 2020-07-07 14:36:00 +0530
+
+    Update test.sh
+
+:100755 100755 744cd4e443c28cd6c74291d76b8798446e83300f 6e119e6b26d75539931089ac71a85281e7cbff6d M	jenkins-script/test/test.sh

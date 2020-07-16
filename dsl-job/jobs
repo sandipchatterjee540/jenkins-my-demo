@@ -1,0 +1,41 @@
+job('Mavan-DSL-JOB-Chiled'){
+  
+  description('This is mavan dsl job')
+  
+  scm{
+  
+    git('https://github.com/sandipchatterjee540/Jenkins-sample-mavan-public-repo.git','master',{node -> node / 'extensions' << '' })
+  
+  }
+
+  steps{
+    maven{
+            mavenInstallation('jenkins-mavan')
+            goals('-B -DskipTests clean package')
+      
+    }
+    maven{
+            mavenInstallation('jenkins-mavan')
+            goals('test')
+      
+    }
+    shell('''
+    
+    echo ******************************** Running The Jar **************************************
+    java -jar /var/jenkins_home/workspace/Mavan-DSL-JOB-Chiled/target/*.jar
+    
+    
+    
+    ''')
+  
+  }
+
+  publishers {
+  
+        archiveArtifacts('target/*.jar')
+        archiveJunit('target/surefire-reports/*.xml')
+        
+
+  }
+
+}

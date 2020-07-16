@@ -1,0 +1,47 @@
+commit 283a47d06c1a6a6955ee55c6bb02a1413fe2b692
+tree cfcc77d1d09732c05b7807cc817dca61145fb431
+parent 96d3717d4e8ac06bf559d03dfed85d934701070d
+author sandipchatterjee540 <58181993+sandipchatterjee540@users.noreply.github.com> 2020-07-07 15:15:51 +0530
+committer GitHub <noreply@github.com> 2020-07-07 15:15:51 +0530
+
+    Update jenkinsfile
+
+:100644 100644 242e24adfa2130e374868bae0d40b5aa94deb588 d0d1012a0921212fe0e410723445141fd2de7c9b M	jenkinsfile
+commit 96d3717d4e8ac06bf559d03dfed85d934701070d
+tree fb6274096a73f5fadea85638ada8a1487af2e90b
+parent 70a8c4c7ee681c09ba464f0b483f399cea78894f
+author sandipchatterjee540 <58181993+sandipchatterjee540@users.noreply.github.com> 2020-07-07 15:15:16 +0530
+committer GitHub <noreply@github.com> 2020-07-07 15:15:16 +0530
+
+    Update jenkinsfile
+
+:100644 100644 c1e9701c5dd1183be69a12681464b604a589a835 242e24adfa2130e374868bae0d40b5aa94deb588 M	jenkinsfile
+commit 70a8c4c7ee681c09ba464f0b483f399cea78894f
+tree 0af28ac5822ee349d7c5e0081dd95d8c3cb1921d
+parent 8aacb8fb4bd1266d19b6d926f56a2efa878f8fd0
+author sandipchatterjee540 <sandipchatterjee540@gmail.com> 2020-07-07 09:41:42 +0000
+committer sandipchatterjee540 <sandipchatterjee540@gmail.com> 2020-07-07 09:41:42 +0000
+
+    add local_deploy
+
+
+:000000 100755 0000000000000000000000000000000000000000 f4c02d3ac47988a6f0ced7b0c01c5acfb65505ff A	jenkins-script/local_deploy/deploy.sh
+:000000 100644 0000000000000000000000000000000000000000 dd9777510d0d34ad6acbc20aa1eebdbdc5cc376e A	jenkins-script/local_deploy/docker-compose.yaml
+commit 8aacb8fb4bd1266d19b6d926f56a2efa878f8fd0
+tree f672fa574c7bf43bd6c68f971eee2b00ef24ea68
+parent fc33cb6b1475cbd4325c3b9d50714ec6043200c9
+author sandipchatterjee540 <58181993+sandipchatterjee540@users.noreply.github.com> 2020-07-07 15:05:43 +0530
+committer GitHub <noreply@github.com> 2020-07-07 15:05:43 +0530
+
+    Delete local_deploy
+
+:100644 000000 8b137891791fe96927ad78e64b0aad7bded08bdc 0000000000000000000000000000000000000000 D	jenkins-script/local_deploy
+commit fc33cb6b1475cbd4325c3b9d50714ec6043200c9
+tree 3f20e97e2f341a7eaf589ab77b0570c6264d1620
+parent 4e3b89d65960f12a74330c6110e1934b439ea55e
+author sandipchatterjee540 <58181993+sandipchatterjee540@users.noreply.github.com> 2020-07-07 15:05:19 +0530
+committer GitHub <noreply@github.com> 2020-07-07 15:05:19 +0530
+
+    Create local_deploy
+
+:000000 100644 0000000000000000000000000000000000000000 8b137891791fe96927ad78e64b0aad7bded08bdc A	jenkins-script/local_deploy

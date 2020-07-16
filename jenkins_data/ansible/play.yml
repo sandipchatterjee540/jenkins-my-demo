@@ -1,0 +1,4 @@
+- hosts: test1
+  tasks: 
+   - shell: echo "Hello World My name is sandip" > /tmp/ansible-file
+   - shell: echo "This is secound file in ansible" > /tmp/ansible2-file

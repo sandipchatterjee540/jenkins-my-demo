@@ -1,0 +1,17 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.39">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.81">
+    <script>node {
+def imageLine = &apos;openjdk:8-jre-alpine&apos;
+writeFile file: &apos;anchore_images&apos;, text: imageLine
+anchore name: &apos;anchore_images&apos;
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

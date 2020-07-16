@@ -1,0 +1,29 @@
+Started by user [8mha:////4BsTeS5cYaYV2lpXWXEIIuoAWzKuSx1wqvQvHvjVc9ejAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgZu/dLi1CL9xJTczDwA9svhPMAAAAA=[0msandip
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/ENV_VER_IN_JENKINS
+[ENV_VER_IN_JENKINS] $ /bin/sh -xe /tmp/jenkins4443860810298423744.sh
++ echo 1
+1
++ echo 1
+1
++ echo http://192.168.43.157:9999/job/ENV_VER_IN_JENKINS/1/
+http://192.168.43.157:9999/job/ENV_VER_IN_JENKINS/1/
++ echo master
+master
++ echo ENV_VER_IN_JENKINS
+ENV_VER_IN_JENKINS
++ echo jenkins-ENV_VER_IN_JENKINS-1
+jenkins-ENV_VER_IN_JENKINS-1
++ echo http://192.168.43.157:9999/
+http://192.168.43.157:9999/
++ echo /usr/local/openjdk-8
+/usr/local/openjdk-8
++ echo ##########################################
+##########################################
++ echo sandip
+sandip
++ echo 26
+26
++ echo Dhap dhapi high school
+Dhap dhapi high school
+Finished: SUCCESS

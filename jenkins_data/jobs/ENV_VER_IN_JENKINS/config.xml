@@ -1,0 +1,39 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>#this is all global env veriable
+# more info: https://wiki.jenkins.io/display/JENKINS/Building+a+software+project#:~:text=and%20configure%20appropriately-,Jenkins%20Set%20Environment%20Variables,all%20of%20these%20environment%20variables.&amp;text=The%20name%20of%20the%20node%20the%20current%20build%20is%20running%20on.
+
+echo &quot;$BUILD_NUMBER&quot;
+echo &quot;$BUILD_ID&quot;
+echo &quot;$BUILD_URL&quot;
+echo &quot;$NODE_NAME&quot;
+echo &quot;$JOB_NAME&quot;
+echo &quot;$BUILD_TAG&quot;
+echo &quot;$JENKINS_URL&quot;
+echo &quot;$JAVA_HOME&quot;
+
+
+########### this is all own env veriable in jenkins ##################
+# go to manage_setting-&gt;config system-&gt;enverment
+echo &quot;##########################################&quot;
+echo &quot;$Name&quot;
+echo &quot;$Age&quot;
+echo &quot;$School&quot;
+</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

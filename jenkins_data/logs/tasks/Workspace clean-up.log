@@ -1,0 +1,20 @@
+Started at Tue Jul 07 13:01:31 UTC 2020
+Checking ansible-with-paramiter
+Checking build-mavan-job-use-file
+Checking DB-BACKUP-ON-REMOTE-HOST-USE-SSH-AND-UPLOAD-IN-AWS-S3-BUCKET
+Checking DSL-CHILED-JOB
+Checking DSL-SEED-JOB
+Checking ENV_VER_IN_JENKINS
+Checking first-job
+Checking git-pull-build-test-deploy-in-private-repo
+Checking git-pull-build-test-in-public-repo-deploy
+Checking job_dsl_ansible_web_project
+Checking Mavan-DSL-JOB-Chiled
+Checking Mavan-DSL-JOB-Chiled-use-file
+Checking mavan-project-seed-job
+Checking PULL-FROM-GIT-PUSH-IN-DOCKER-HUB-MAVEN-APP
+Checking run-command-in-remote-host-use-ssh
+Checking ssh-connect-in-web
+Checking use-ansible-to-connect-remotehost-use-ssh-and-run-playbook-in-this-host
+Checking Web-Mysql-Ansible-Docker-Jenkins-PHP-In-A-Small-Project
+Finished at Tue Jul 07 13:01:32 UTC 2020. 1155ms

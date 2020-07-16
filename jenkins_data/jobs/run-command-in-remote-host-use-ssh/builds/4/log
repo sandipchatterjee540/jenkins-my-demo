@@ -1,0 +1,18 @@
+Started by user [8mha:////4BsTeS5cYaYV2lpXWXEIIuoAWzKuSx1wqvQvHvjVc9ejAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgZu/dLi1CL9xJTczDwA9svhPMAAAAA=[0msandip
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/run-command-in-remote-host-use-ssh
+[SSH] script:
+Name="sandip"
+Age="24"
+Food="apple"
+
+echo "my name is $Name and my age is $Age"
+echo "and fev food is $Food" > /tmp/ja-test-again.txt
+
+[SSH] executing...
+my name is sandip and my age is 24
+
+[SSH] completed
+[SSH] exit-status: 0
+
+Finished: SUCCESS

@@ -1,0 +1,32 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2020-07-05 13:22:45.456 UTC</timestamp>
+  <md5sum>8f3d388b1d18a1d2e7a4249e3f5e013c</md5sum>
+  <fileName>Credential id=GIT_CRA name=sandipchatterjee540/****** (this is my git cradencial)</fileName>
+  <usages>
+    <entry>
+      <string>git-pull-build-test-deploy-in-private-repo</string>
+      <ranges>1-26</ranges>
+    </entry>
+    <entry>
+      <string>push image in docker</string>
+      <ranges>6</ranges>
+    </entry>
+    <entry>
+      <string>PULL-FROM-GIT-PUSH-IN-DOCKER-HUB-MAVEN-APP</string>
+      <ranges>1-17,20-22</ranges>
+    </entry>
+  </usages>
+  <facets>
+    <com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet plugin="credentials@2.3.11">
+      <timestamp>1594108456285</timestamp>
+      <itemFullName>push image in docker</itemFullName>
+      <timestamp0>1594108214564</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet>
+    <com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet plugin="credentials@2.3.11">
+      <timestamp>1594124344003</timestamp>
+      <itemFullName>PULL-FROM-GIT-PUSH-IN-DOCKER-HUB-MAVEN-APP</itemFullName>
+      <timestamp0>1594123666639</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet>
+  </facets>
+</fingerprint>

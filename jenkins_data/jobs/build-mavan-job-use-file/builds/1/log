@@ -1,0 +1,26 @@
+Started by user [8mha:////4BsTeS5cYaYV2lpXWXEIIuoAWzKuSx1wqvQvHvjVc9ejAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgZu/dLi1CL9xJTczDwA9svhPMAAAAA=[0msandip
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/build-mavan-job-use-file
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/sandipchatterjee540/dslp-jobs.git
+ > git init /var/jenkins_home/workspace/build-mavan-job-use-file # timeout=10
+Fetching upstream changes from https://github.com/sandipchatterjee540/dslp-jobs.git
+ > git --version # timeout=10
+ > git fetch --tags --progress -- https://github.com/sandipchatterjee540/dslp-jobs.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/sandipchatterjee540/dslp-jobs.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/sandipchatterjee540/dslp-jobs.git # timeout=10
+Fetching upstream changes from https://github.com/sandipchatterjee540/dslp-jobs.git
+ > git fetch --tags --progress -- https://github.com/sandipchatterjee540/dslp-jobs.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 14a486fa61e64c9249d3af010f6273e2ef99ffc7 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 14a486fa61e64c9249d3af010f6273e2ef99ffc7 # timeout=10
+Commit message: "Update jobs"
+First time build. Skipping changelog.
+Processing DSL script jobs
+Added items:
+    GeneratedJob{name='Mavan-DSL-JOB-Chiled-use-file'}
+Finished: SUCCESS

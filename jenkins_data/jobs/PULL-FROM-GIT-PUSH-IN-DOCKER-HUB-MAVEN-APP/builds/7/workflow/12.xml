@@ -1,0 +1,40 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.5">
+  <node class="cps.n.StepStartNode" plugin="workflow-cps@2.81">
+    <parentIds>
+      <string>11</string>
+    </parentIds>
+    <id>12</id>
+    <descriptorId>org.jenkinsci.plugins.credentialsbinding.impl.BindingStep</descriptorId>
+  </node>
+  <actions>
+    <s.a.LogStorageAction/>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.81">
+      <arguments>
+        <entry>
+          <string>bindings</string>
+          <list>
+            <map>
+              <entry>
+                <string>$class</string>
+                <string>org.jenkinsci.plugins.credentialsbinding.impl.StringBinding</string>
+              </entry>
+              <entry>
+                <string>variable</string>
+                <string>PASS</string>
+              </entry>
+              <entry>
+                <string>credentialsId</string>
+                <string>DOCKER_HUB</string>
+              </entry>
+            </map>
+          </list>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.40">
+      <startTime>1594112276172</startTime>
+    </wf.a.TimingAction>
+  </actions>
+</Tag>

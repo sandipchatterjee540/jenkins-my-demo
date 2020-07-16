@@ -1,0 +1,9 @@
+commit d5be28fcb37f9b2304a64dfed404f657bb2ca088
+tree fe19702dbaa2808665c5cb9506bc64158f2ce62d
+parent 283a47d06c1a6a6955ee55c6bb02a1413fe2b692
+author sandipchatterjee540 <58181993+sandipchatterjee540@users.noreply.github.com> 2020-07-07 16:37:50 +0530
+committer GitHub <noreply@github.com> 2020-07-07 16:37:50 +0530
+
+    Update docker-compose.yaml
+
+:100644 100644 dd9777510d0d34ad6acbc20aa1eebdbdc5cc376e 6d27a5fa25ff72e66d0d2271f28f4f1017d13e60 M	jenkins-script/local_deploy/docker-compose.yaml

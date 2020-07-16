@@ -1,0 +1,33 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<javaposse.jobdsl.plugin.DescriptorImpl plugin="job-dsl@1.77">
+  <templateJobMap class="com.google.common.collect.HashMultimap" serialization="custom">
+    <com.google.common.collect.HashMultimap>
+      <default/>
+      <int>8</int>
+      <int>0</int>
+    </com.google.common.collect.HashMultimap>
+  </templateJobMap>
+  <generatedJobMap class="concurrent-hash-map">
+    <entry>
+      <string>DSL-CHILED-JOB</string>
+      <javaposse.jobdsl.plugin.SeedReference>
+        <seedJobName>DSL-SEED-JOB</seedJobName>
+        <digest>fba8cfb6bcb38e9ad8e32985ed52444f</digest>
+      </javaposse.jobdsl.plugin.SeedReference>
+    </entry>
+    <entry>
+      <string>Mavan-DSL-JOB-Chiled</string>
+      <javaposse.jobdsl.plugin.SeedReference>
+        <seedJobName>mavan-project-seed-job</seedJobName>
+        <digest>8359f14b6cff8c352c95002dddfeff57</digest>
+      </javaposse.jobdsl.plugin.SeedReference>
+    </entry>
+    <entry>
+      <string>Mavan-DSL-JOB-Chiled-use-file</string>
+      <javaposse.jobdsl.plugin.SeedReference>
+        <seedJobName>build-mavan-job-use-file</seedJobName>
+        <digest>8359f14b6cff8c352c95002dddfeff57</digest>
+      </javaposse.jobdsl.plugin.SeedReference>
+    </entry>
+  </generatedJobMap>
+</javaposse.jobdsl.plugin.DescriptorImpl>

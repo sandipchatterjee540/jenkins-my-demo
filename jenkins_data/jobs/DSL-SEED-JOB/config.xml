@@ -1,0 +1,57 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <javaposse.jobdsl.plugin.ExecuteDslScripts plugin="job-dsl@1.77">
+      <scriptText>job(&apos;DSL-CHILED-JOB&apos;){
+  description(&apos;This is my first chiled job&apos;)
+
+
+  parameters {
+        stringParam(&apos;name&apos;,defaultValue=&apos;sandip&apos;,description=&apos;my name&apos;)
+        booleanParam(&apos;student&apos;,true)
+        choiceParam(&apos;age&apos;,[&apos;25 (default)&apos;,&apos;30&apos;,&apos;40&apos;,&apos;55&apos;])
+
+  }
+
+  scm {
+  
+  git(&apos;https://github.com/sandipchatterjee540/Jenkins-sample-mavan-public-repo.git&apos;,&apos;master&apos;,{node -&gt; node / &apos;extensions&apos; &lt;&lt; &apos;&apos; })
+  
+  
+  }
+  
+  steps{
+  
+  shell(&quot;echo sandip&quot;)
+  
+  
+  }
+  
+}</scriptText>
+      <usingScriptText>true</usingScriptText>
+      <sandbox>false</sandbox>
+      <ignoreExisting>false</ignoreExisting>
+      <ignoreMissingFiles>false</ignoreMissingFiles>
+      <failOnMissingPlugin>false</failOnMissingPlugin>
+      <failOnSeedCollision>false</failOnSeedCollision>
+      <unstableOnDeprecation>false</unstableOnDeprecation>
+      <removedJobAction>IGNORE</removedJobAction>
+      <removedViewAction>IGNORE</removedViewAction>
+      <removedConfigFilesAction>IGNORE</removedConfigFilesAction>
+      <lookupStrategy>JENKINS_ROOT</lookupStrategy>
+    </javaposse.jobdsl.plugin.ExecuteDslScripts>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

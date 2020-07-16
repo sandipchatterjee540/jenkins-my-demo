@@ -1,0 +1,9 @@
+commit c1c1e899becad718b6f9eac1cbe15b58c7e58dbf
+tree 752f3f0d3a0972c170517e29077a4bc6862d53b2
+parent 75843d6162c9a86772500d0a0ecca867ee7c7257
+author sandipchatterjee540 <58181993+sandipchatterjee540@users.noreply.github.com> 2020-07-07 17:16:06 +0530
+committer GitHub <noreply@github.com> 2020-07-07 17:16:06 +0530
+
+    Update deploy.sh
+
+:100755 100755 593c1e04289c737f274e1801f7934cbae01470b7 1be2137209a18584600eeab8ce50f8a3dfdd9894 M	jenkins-script/local_deploy/deploy.sh

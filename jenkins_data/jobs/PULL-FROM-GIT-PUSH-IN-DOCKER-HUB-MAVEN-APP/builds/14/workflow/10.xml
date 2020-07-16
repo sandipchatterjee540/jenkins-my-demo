@@ -1,0 +1,31 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.5">
+  <node class="cps.n.StepStartNode" plugin="workflow-cps@2.81">
+    <parentIds>
+      <string>9</string>
+    </parentIds>
+    <id>10</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.EnvStep</descriptorId>
+  </node>
+  <actions>
+    <s.a.LogStorageAction/>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.81">
+      <arguments>
+        <entry>
+          <string>overrides</string>
+          <list>
+            <string>GIT_BRANCH=origin/master</string>
+            <string>GIT_COMMIT=4f2a43dc7b28e6e4ee19cadf21493dd9ad5420f0</string>
+            <string>GIT_PREVIOUS_COMMIT=0ab7bb57f0a21dc570d64b9bf907b3983c5d5c16</string>
+            <string>GIT_PREVIOUS_SUCCESSFUL_COMMIT=4e3b89d65960f12a74330c6110e1934b439ea55e</string>
+            <wf.a.ArgumentsAction_-NotStoredReason>MASKED_VALUE</wf.a.ArgumentsAction_-NotStoredReason>
+          </list>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>false</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.40">
+      <startTime>1594120833843</startTime>
+    </wf.a.TimingAction>
+  </actions>
+</Tag>

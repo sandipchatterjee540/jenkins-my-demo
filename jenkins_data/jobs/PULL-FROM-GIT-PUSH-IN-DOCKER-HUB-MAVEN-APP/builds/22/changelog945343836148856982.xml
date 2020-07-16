@@ -1,0 +1,10 @@
+commit 0ffda86e6440d9fef29612916aa1fe35bf75e9b8
+tree 89c13e875fa06cf73502b33f43beed40a0922636
+parent 47e490124f6f5424a370ab50b13e92df24c00c94
+author sandipchatterjee540 <sandipchatterjee540@gmail.com> 2020-07-07 12:17:29 +0000
+committer sandipchatterjee540 <sandipchatterjee540@gmail.com> 2020-07-07 12:17:29 +0000
+
+    pass value through paramiter
+
+
+:100644 100644 8289d4d214e4ceeb6290406d0227d151f16d0512 4c29e0d39682e8f3f87a094a7d19433f6ade6c34 M	jenkinsfile

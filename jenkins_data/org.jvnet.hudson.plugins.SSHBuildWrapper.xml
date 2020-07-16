@@ -1,0 +1,23 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<org.jvnet.hudson.plugins.SSHBuildWrapper_-DescriptorImpl plugin="ssh@2.6.1">
+  <sites>
+    <org.jvnet.hudson.plugins.CredentialsSSHSite>
+      <hostname>remote_host</hostname>
+      <username>remote_user</username>
+      <port>22</port>
+      <credentialId>dfa5dcba-c5f9-44d0-9a22-079fd537e946</credentialId>
+      <serverAliveInterval>0</serverAliveInterval>
+      <timeout>0</timeout>
+      <pty>false</pty>
+    </org.jvnet.hudson.plugins.CredentialsSSHSite>
+    <org.jvnet.hudson.plugins.CredentialsSSHSite>
+      <hostname>web</hostname>
+      <username>remote_user</username>
+      <port>22</port>
+      <credentialId>65c8287b-a5cb-4282-a641-ec4121cad717</credentialId>
+      <serverAliveInterval>0</serverAliveInterval>
+      <timeout>0</timeout>
+      <pty>false</pty>
+    </org.jvnet.hudson.plugins.CredentialsSSHSite>
+  </sites>
+</org.jvnet.hudson.plugins.SSHBuildWrapper_-DescriptorImpl>

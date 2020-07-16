@@ -1,0 +1,80 @@
+pipeline {
+    agent any
+
+  parameters {
+        string(defaultValue: "$BUILD_NUMBER", description: 'This is a image tag', name: 'BUILD_TAG')
+        string(defaultValue: "mavan-app", description: 'This is Image name', name: 'IMAGE')
+    }
+    
+  environment {
+     PASS=credentials('DOCKER_HUB')
+   
+  }
+
+  stages {
+
+      stage('Building jar'){
+          steps {
+
+              sh '''
+                  ./jenkins-script/build/mvn.sh mvn -B -DskipTests clean package
+                  ./jenkins-script/build/build.sh
+              '''
+
+          }
+      }
+  
+
+      stage('Test'){
+          steps{
+
+              sh '''
+                ./jenkins-script/test/test.sh mvn test
+
+              '''
+          }
+      }
+    
+     stage('Push'){
+         steps{
+             
+             sh '''
+                ./jenkins-script/push/push.sh
+                
+             '''
+            }
+     }
+     
+     stage('Deploy'){
+         steps{
+             
+             sh '''
+                echo $PWD
+                ./jenkins-script/local_deploy/deploy.sh
+                
+             '''
+            }
+            
+          }
+
+
+  }  
+
+  }
+
+
+  
+    
+
+
+
+  
+
+
+
+
+
+
+
+
+

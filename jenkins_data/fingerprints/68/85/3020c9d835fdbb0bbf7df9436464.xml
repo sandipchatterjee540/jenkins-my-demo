@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2020-07-03 07:44:59.437 UTC</timestamp>
+  <md5sum>68853020c9d835fdbb0bbf7df9436464</md5sum>
+  <fileName>Credential id=MYSQL_PASSWORD name=MYSQL_PASSWORD</fileName>
+  <usages>
+    <entry>
+      <string>DB-BACKUP-ON-REMOTE-HOST-USE-SSH-AND-UPLOAD-IN-AWS-S3-BUCKET</string>
+      <ranges>1-4</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

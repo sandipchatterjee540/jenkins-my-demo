@@ -1,0 +1,82 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <javaposse.jobdsl.plugin.ExecuteDslScripts plugin="job-dsl@1.77">
+      <scriptText>job(&apos;Mavan-DSL-JOB-Chiled&apos;){
+  
+  description(&apos;This is mavan dsl job&apos;)
+  
+  scm{
+  
+    git(&apos;https://github.com/sandipchatterjee540/Jenkins-sample-mavan-public-repo.git&apos;,&apos;master&apos;,{node -&gt; node / &apos;extensions&apos; &lt;&lt; &apos;&apos; })
+  
+  }
+
+  steps{
+    maven{
+            mavenInstallation(&apos;jenkins-mavan&apos;)
+            goals(&apos;-B -DskipTests clean package&apos;)
+      
+    }
+    maven{
+            mavenInstallation(&apos;jenkins-mavan&apos;)
+            goals(&apos;test&apos;)
+      
+    }
+    shell(&apos;&apos;&apos;
+    
+    echo ******************************** Running The Jar **************************************
+    java -jar /var/jenkins_home/workspace/Mavan-DSL-JOB-Chiled/target/*.jar
+    
+    
+    
+    &apos;&apos;&apos;)
+  
+  }
+
+  publishers {
+  
+        archiveArtifacts(&apos;target/*.jar&apos;)
+        archiveJunit(&apos;target/surefire-reports/*.xml&apos;)
+        
+
+  }
+
+}</scriptText>
+      <usingScriptText>true</usingScriptText>
+      <sandbox>false</sandbox>
+      <ignoreExisting>false</ignoreExisting>
+      <ignoreMissingFiles>false</ignoreMissingFiles>
+      <failOnMissingPlugin>false</failOnMissingPlugin>
+      <failOnSeedCollision>false</failOnSeedCollision>
+      <unstableOnDeprecation>false</unstableOnDeprecation>
+      <removedJobAction>IGNORE</removedJobAction>
+      <removedViewAction>IGNORE</removedViewAction>
+      <removedConfigFilesAction>IGNORE</removedConfigFilesAction>
+      <lookupStrategy>JENKINS_ROOT</lookupStrategy>
+    </javaposse.jobdsl.plugin.ExecuteDslScripts>
+  </builders>
+  <publishers>
+    <hudson.tasks.BuildTrigger>
+      <childProjects>Mavan-DSL-JOB-Chiled</childProjects>
+      <threshold>
+        <name>SUCCESS</name>
+        <ordinal>0</ordinal>
+        <color>BLUE</color>
+        <completeBuild>true</completeBuild>
+      </threshold>
+    </hudson.tasks.BuildTrigger>
+  </publishers>
+  <buildWrappers/>
+</project>

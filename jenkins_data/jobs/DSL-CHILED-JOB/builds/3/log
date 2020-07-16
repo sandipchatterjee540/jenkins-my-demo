@@ -1,0 +1,54 @@
+Started by user [8mha:////4BsTeS5cYaYV2lpXWXEIIuoAWzKuSx1wqvQvHvjVc9ejAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgZu/dLi1CL9xJTczDwA9svhPMAAAAA=[0msandip
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/DSL-CHILED-JOB
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/jitpack/maven-simple.git # timeout=10
+Fetching upstream changes from https://github.com/jitpack/maven-simple.git
+ > git --version # timeout=10
+ > git fetch --tags --progress -- https://github.com/jitpack/maven-simple.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/master^{commit} # timeout=10
+Checking out Revision 9466faa13d65044c8430b418327df826f13ca07a (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9466faa13d65044c8430b418327df826f13ca07a # timeout=10
+Commit message: "JUnit4 test"
+First time build. Skipping changelog.
+ > git tag -a -f -m Jenkins Build #3 jenkins-DSL-CHILED-JOB-3 # timeout=10
+FATAL: Could not apply tag jenkins-DSL-CHILED-JOB-3
+hudson.plugins.git.GitException: Command "git tag -a -f -m Jenkins Build #3 jenkins-DSL-CHILED-JOB-3" returned status code 128:
+stdout: 
+stderr: 
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'root@f074033ef4f6.(none)')
+
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:2436)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:2366)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:2362)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommand(CliGitAPIImpl.java:1922)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommand(CliGitAPIImpl.java:1934)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.tag(CliGitAPIImpl.java:1801)
+Caused: hudson.plugins.git.GitException: Could not apply tag jenkins-DSL-CHILED-JOB-3
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.tag(CliGitAPIImpl.java:1803)
+	at hudson.plugins.git.GitAPI.tag(GitAPI.java:282)
+	at hudson.plugins.git.extensions.impl.PerBuildTag.onCheckoutCompleted(PerBuildTag.java:30)
+	at hudson.plugins.git.GitSCM.checkout(GitSCM.java:1259)
+	at hudson.scm.SCM.checkout(SCM.java:505)
+	at hudson.model.AbstractProject.checkout(AbstractProject.java:1206)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.defaultCheckout(AbstractBuild.java:574)
+	at jenkins.scm.SCMCheckoutStrategy.checkout(SCMCheckoutStrategy.java:86)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:499)
+	at hudson.model.Run.execute(Run.java:1880)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:428)
+Finished: FAILURE

@@ -1,0 +1,12 @@
+Started by user [8mha:////4BsTeS5cYaYV2lpXWXEIIuoAWzKuSx1wqvQvHvjVc9ejAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgZu/dLi1CL9xJTczDwA9svhPMAAAAA=[0msandip
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/first-job
+[first-job] $ /bin/sh -xe /tmp/jenkins2352284688031964607.sh
++ Name=sandip
++ echo My name is sandip
+My name is sandip
++ hostname
+b16ff4a9406d
++ pwd
+/var/jenkins_home/workspace/first-job
+Finished: SUCCESS
